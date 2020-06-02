@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+section.header {
+  width: 100%;
+  background-color: #0061f2;
+  background-image: linear-gradient(
+    135deg,
+    #0061f2 0%,
+    rgba(105, 0, 199, 0.8) 100%
+  );
+  nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px 0;
+    .logo {
+      display: flex;
+      align-items: flex-end;
+      h1 {
+        color: #fff;
+        letter-spacing: 0.5px;
+        font-family: "Montserrat", sans-serif;
+        &:hover {
+          color: #f1f1f1;
+        }
+      }
+      .logo-img {
+        width: 60px;
+        height: auto;
+      }
+    }
+    .links {
+      padding: 0 10px;
+      .link {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        &:hover {
+          color: #f1f1f1;
+        }
+      }
+    }
+  }
+  .hero {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h3 {
+        width: 75%;
+        color: #fff;
+        font-family: "montserrat", sans-serif;
+        font-size: 40px;
+      }
+      span {
+        padding: 20px 0;
+        color: #fff;
+        font-family: "montserrat", sans-serif;
+      }
+      a {
+        text-align: center;
+        text-decoration: none;
+        width: 200px;
+        font-family: "montserrat", sans-serif;
+        background: #333;
+        color: #fff;
+
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 10px;
+        &:hover {
+          background-color: lighten($color: #333, $amount: 2);
+        }
+      }
+    }
+    .hero-chat {
+      img {
+        height: 500px;
+      }
+    }
+  }
+}
+section.details-container {
+  padding: 40px 0;
+  .details {
+    display: flex;
+    .detail {
+      .img-logo {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+}
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
